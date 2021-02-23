@@ -3,7 +3,7 @@
   <component name="GoLibraries">
     <option name="urls">
       <list>
-        <option value="file://C:/Program Files/Go" />
+        <option value="file:///usr/local/go" />
       </list>
     </option>
   </component>
