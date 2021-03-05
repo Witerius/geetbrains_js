@@ -1,4 +1,4 @@
-package main
+package hw_4
 
 import (
 	"fmt"
