@@ -1,6 +1,4 @@
-package main
-
-//package hw_2
+package hw_2
 
 import (
 	"fmt"
