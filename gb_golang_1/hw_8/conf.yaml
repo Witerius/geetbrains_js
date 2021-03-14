@@ -1,0 +1,2 @@
+port: 8080
+db_url: postgres://db-user:db-password@petstore-db:5432/petstore?sslmode=disable
