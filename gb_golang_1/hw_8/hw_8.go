@@ -1,36 +1,32 @@
 package main
 
 import (
-    "fmt"
-    "log"
-    "time"
-    "gopkg.in/yaml.v2"
-    "io/ioutil"
-
-    "github.com/kelseyhightower/envconfig"
+	"gopkg.in/yaml.v2"
+	"io/ioutil"
+	"log"
 )
 
 type conf struct {
-    port int64 `yaml:"port"`
-    db_url string `yaml:"db_url"`
+	port   int64  `yaml:"port"`
+	db_url string `yaml:"db_url"`
 }
 
 func (c *conf) getConf() *conf {
 
-    yamlFile, err := ioutil.ReadFile("conf.yaml")
-    if err != nil {
-        log.Printf("yamlFile.Get err   #%v ", err)
-    }
-    err = yaml.Unmarshal(yamlFile, c)
-    if err != nil {
-        log.Fatalf("Unmarshal: %v", err)
-    }
+	yamlFile, err := ioutil.ReadFile("conf.yaml")
+	if err != nil {
+		log.Printf("yamlFile.Get err   #%v ", err)
+	}
+	err = yaml.Unmarshal(yamlFile, c)
+	if err != nil {
+		log.Fatalf("Unmarshal: %v", err)
+	}
 
-    return c
+	return c
 }
 
 func main() {
-    var c conf
-    c.getConf()
+	var c conf
+	c.getConf()
 
 }

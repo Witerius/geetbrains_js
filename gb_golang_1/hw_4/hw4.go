@@ -7,13 +7,13 @@ import (
 
 func main() {
 	var numbers = []int{4, 1, 7, 0, 44, 2, 56, 0, 20}
-	var result = insertionSort(numbers)
+	var result = InsertionSort(numbers)
 	for i, r := range result {
 		fmt.Println("index = ", strconv.Itoa(i), strconv.Itoa(r))
 	}
 }
 
-func insertionSort(ar []int) []int {
+func InsertionSort(ar []int) []int {
 	for i := 1; i < len(ar); i++ {
 		x := ar[i]
 		j := i
