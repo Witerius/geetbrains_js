@@ -1,7 +1,5 @@
 package hw_1
 
-//package main
-
 import (
 	"fmt"
 )
