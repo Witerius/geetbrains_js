@@ -1,4 +1,4 @@
-package main
+package hw_8
 
 import (
 	"gopkg.in/yaml.v2"
