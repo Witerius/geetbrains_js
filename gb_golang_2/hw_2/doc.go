@@ -1,4 +1,4 @@
-package main
+package doc
 
 // Some docs
 // NewText returns some error
